@@ -17,10 +17,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
   margin: 0;
   animation: titleBounce 2s ease-in-out infinite, titleShimmer 3s ease infinite;
-  filter: drop-shadow(0 4px 12px rgba(255, 215, 0, 0.4));
+  /* Drop shadow and text-shadow don't work with background-clip: text */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .cat-stage {
